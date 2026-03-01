@@ -1,0 +1,82 @@
+DIST-A#show vlan brief
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Fa0/6, Fa0/7, Fa0/8, Fa0/9
+                                                Fa0/10, Fa0/11, Fa0/12, Fa0/13
+                                                Fa0/14, Fa0/15, Fa0/16, Fa0/17
+                                                Fa0/18, Fa0/19, Fa0/20, Fa0/21
+                                                Fa0/22, Fa0/23, Fa0/24, Gig0/1
+                                                Gig0/2
+10   IT                               active    Fa0/2
+20   REDACTORES                       active    Fa0/3
+30   VENTAS                           active    Fa0/4
+110  CPD_A                            active    Fa0/5
+1002 fddi-default                     active    
+1003 token-ring-default               active    
+1004 fddinet-default                  active    
+1005 trnet-default                    active    
+DIST-A#show interfaces trunk
+Port        Mode         Encapsulation  Status        Native vlan
+Fa0/1       on           802.1q         trunking      1
+
+Port        Vlans allowed on trunk
+Fa0/1       10,20,30,110
+
+Port        Vlans allowed and active in management domain
+Fa0/1       10,20,30,110
+
+Port        Vlans in spanning tree forwarding state and not pruned
+Fa0/1       10,20,30,110
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+DIST-B#show vlan brief
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Fa0/9, Fa0/10, Fa0/11, Fa0/12
+                                                Fa0/13, Fa0/14, Fa0/15, Fa0/16
+                                                Fa0/17, Fa0/18, Fa0/19, Fa0/20
+                                                Fa0/21, Fa0/22, Fa0/23, Fa0/24
+                                                Gig0/1, Gig0/2
+40   CAFETERIA                        active    Fa0/2
+50   RRH_MEDICO                       active    Fa0/3
+60   FINANZAS                         active    Fa0/4
+70   OPERACIONES                      active    Fa0/6
+80   CTO                              active    Fa0/7
+100  DMZ                              active    
+120  CPD_B                            active    Fa0/5
+1002 fddi-default                     active    
+1003 token-ring-default               active    
+1004 fddinet-default                  active    
+1005 trnet-default                    active    
+DIST-B#show interfaces trunk
+%CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on FastEthernet0/3 (50), with Switch FastEthernet0/1 (1).
+
+%CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on FastEthernet0/6 (70), with Switch FastEthernet0/1 (1).
+
+%CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on FastEthernet0/4 (60), with Switch FastEthernet0/1 (1).
+
+%CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on FastEthernet0/2 (40), with Switch FastEthernet0/1 (1).
+
+%CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on FastEthernet0/7 (80), with Switch FastEthernet0/1 (1).
+
+Port        Mode         Encapsulation  Status        Native vlan
+Fa0/1       on           802.1q         trunking      1
+Fa0/8       on           802.1q         trunking      1
+
+Port        Vlans allowed on trunk
+Fa0/1       40,50,60,70,80,100,120
+Fa0/8       1-1005
+
+Port        Vlans allowed and active in management domain
+Fa0/1       40,50,60,70,80,100,120
+Fa0/8       1,40,50,60,70,80,100,120
+
+Port        Vlans in spanning tree forwarding state and not pruned
+Fa0/1       40,50,60,70,80,100,120
+Fa0/8       1,40,50,60,70,80,100,120

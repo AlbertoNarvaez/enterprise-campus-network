@@ -1,0 +1,114 @@
+R-A#show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+       i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area
+       * - candidate default, U - per-user static route, o - ODR
+       P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+     10.0.0.0/8 is variably subnetted, 16 subnets, 3 masks
+O       10.0.0.0/30 [110/2] via 192.168.1.2, 00:02:36, GigabitEthernet0/1
+C       10.10.10.0/24 is directly connected, GigabitEthernet0/2.10
+L       10.10.10.1/32 is directly connected, GigabitEthernet0/2.10
+C       10.20.20.0/24 is directly connected, GigabitEthernet0/2.20
+L       10.20.20.1/32 is directly connected, GigabitEthernet0/2.20
+C       10.30.30.0/24 is directly connected, GigabitEthernet0/2.30
+L       10.30.30.1/32 is directly connected, GigabitEthernet0/2.30
+O       10.40.40.0/24 [110/2] via 192.168.1.10, 00:02:36, GigabitEthernet0/0
+O       10.50.50.0/24 [110/2] via 192.168.1.10, 00:02:36, GigabitEthernet0/0
+O       10.60.60.0/24 [110/2] via 192.168.1.10, 00:02:36, GigabitEthernet0/0
+O       10.70.70.0/24 [110/2] via 192.168.1.10, 00:02:36, GigabitEthernet0/0
+O       10.80.80.0/24 [110/2] via 192.168.1.10, 00:02:36, GigabitEthernet0/0
+O       10.100.100.0/24 [110/2] via 192.168.1.10, 00:02:36, GigabitEthernet0/0
+C       10.110.110.0/24 is directly connected, GigabitEthernet0/2.110
+L       10.110.110.1/32 is directly connected, GigabitEthernet0/2.110
+O       10.120.120.0/24 [110/2] via 192.168.1.10, 00:02:36, GigabitEthernet0/0
+     192.168.1.0/24 is variably subnetted, 5 subnets, 2 masks
+C       192.168.1.0/30 is directly connected, GigabitEthernet0/1
+L       192.168.1.1/32 is directly connected, GigabitEthernet0/1
+O       192.168.1.4/30 [110/2] via 192.168.1.10, 00:02:36, GigabitEthernet0/0
+                       [110/2] via 192.168.1.2, 00:02:36, GigabitEthernet0/1
+C       192.168.1.8/30 is directly connected, GigabitEthernet0/0
+L       192.168.1.9/32 is directly connected, GigabitEthernet0/0
+
+------------------------------------------------------------------------------------------------
+
+
+R-B#show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+       i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area
+       * - candidate default, U - per-user static route, o - ODR
+       P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+     10.0.0.0/8 is variably subnetted, 19 subnets, 3 masks
+O       10.0.0.0/30 [110/2] via 192.168.1.6, 00:03:29, GigabitEthernet0/1
+O       10.10.10.0/24 [110/2] via 192.168.1.9, 00:03:29, GigabitEthernet0/0
+O       10.20.20.0/24 [110/2] via 192.168.1.9, 00:03:29, GigabitEthernet0/0
+O       10.30.30.0/24 [110/2] via 192.168.1.9, 00:03:29, GigabitEthernet0/0
+C       10.40.40.0/24 is directly connected, GigabitEthernet0/2.40
+L       10.40.40.1/32 is directly connected, GigabitEthernet0/2.40
+C       10.50.50.0/24 is directly connected, GigabitEthernet0/2.50
+L       10.50.50.1/32 is directly connected, GigabitEthernet0/2.50
+C       10.60.60.0/24 is directly connected, GigabitEthernet0/2.60
+L       10.60.60.1/32 is directly connected, GigabitEthernet0/2.60
+C       10.70.70.0/24 is directly connected, GigabitEthernet0/2.70
+L       10.70.70.1/32 is directly connected, GigabitEthernet0/2.70
+C       10.80.80.0/24 is directly connected, GigabitEthernet0/2.80
+L       10.80.80.1/32 is directly connected, GigabitEthernet0/2.80
+C       10.100.100.0/24 is directly connected, GigabitEthernet0/2.100
+L       10.100.100.1/32 is directly connected, GigabitEthernet0/2.100
+O       10.110.110.0/24 [110/2] via 192.168.1.9, 00:03:29, GigabitEthernet0/0
+C       10.120.120.0/24 is directly connected, GigabitEthernet0/2.120
+L       10.120.120.1/32 is directly connected, GigabitEthernet0/2.120
+     192.168.1.0/24 is variably subnetted, 5 subnets, 2 masks
+O       192.168.1.0/30 [110/2] via 192.168.1.9, 00:03:29, GigabitEthernet0/0
+                       [110/2] via 192.168.1.6, 00:03:29, GigabitEthernet0/1
+C       192.168.1.4/30 is directly connected, GigabitEthernet0/1
+L       192.168.1.5/32 is directly connected, GigabitEthernet0/1
+C       192.168.1.8/30 is directly connected, GigabitEthernet0/0
+L       192.168.1.10/32 is directly connected, GigabitEthernet0/0
+
+------------------------------------------------------------------------------------------------
+
+
+R-C#show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+       i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area
+       * - candidate default, U - per-user static route, o - ODR
+       P - periodic downloaded static route
+
+Gateway of last resort is 10.0.0.1 to network 0.0.0.0
+
+     10.0.0.0/8 is variably subnetted, 13 subnets, 3 masks
+C       10.0.0.0/30 is directly connected, GigabitEthernet0/0
+L       10.0.0.2/32 is directly connected, GigabitEthernet0/0
+O       10.10.10.0/24 [110/2] via 192.168.1.1, 00:04:16, GigabitEthernet0/1
+O       10.20.20.0/24 [110/2] via 192.168.1.1, 00:04:16, GigabitEthernet0/1
+O       10.30.30.0/24 [110/2] via 192.168.1.1, 00:04:16, GigabitEthernet0/1
+O       10.40.40.0/24 [110/2] via 192.168.1.5, 00:04:16, GigabitEthernet0/2
+O       10.50.50.0/24 [110/2] via 192.168.1.5, 00:04:16, GigabitEthernet0/2
+O       10.60.60.0/24 [110/2] via 192.168.1.5, 00:04:16, GigabitEthernet0/2
+O       10.70.70.0/24 [110/2] via 192.168.1.5, 00:04:16, GigabitEthernet0/2
+O       10.80.80.0/24 [110/2] via 192.168.1.5, 00:04:16, GigabitEthernet0/2
+O       10.100.100.0/24 [110/2] via 192.168.1.5, 00:04:16, GigabitEthernet0/2
+O       10.110.110.0/24 [110/2] via 192.168.1.1, 00:04:16, GigabitEthernet0/1
+O       10.120.120.0/24 [110/2] via 192.168.1.5, 00:04:16, GigabitEthernet0/2
+     192.168.1.0/24 is variably subnetted, 5 subnets, 2 masks
+C       192.168.1.0/30 is directly connected, GigabitEthernet0/1
+L       192.168.1.2/32 is directly connected, GigabitEthernet0/1
+C       192.168.1.4/30 is directly connected, GigabitEthernet0/2
+L       192.168.1.6/32 is directly connected, GigabitEthernet0/2
+O       192.168.1.8/30 [110/2] via 192.168.1.1, 00:04:16, GigabitEthernet0/1
+                       [110/2] via 192.168.1.5, 00:04:16, GigabitEthernet0/2
+S*   0.0.0.0/0 [1/0] via 10.0.0.1

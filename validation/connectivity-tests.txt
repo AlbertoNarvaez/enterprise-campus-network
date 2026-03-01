@@ -1,0 +1,148 @@
+C:\>ping 10.110.110.1
+
+Pinging 10.110.110.1 with 32 bytes of data:
+
+Reply from 10.110.110.1: bytes=32 time=1ms TTL=255
+Reply from 10.110.110.1: bytes=32 time=2ms TTL=255
+Reply from 10.110.110.1: bytes=32 time<1ms TTL=255
+Reply from 10.110.110.1: bytes=32 time<1ms TTL=255
+
+Ping statistics for 10.110.110.1:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 2ms, Average = 0ms
+
+---------------------------------------------------------------
+C:\>ping 10.10.10.1
+
+Pinging 10.10.10.1 with 32 bytes of data:
+
+Reply from 10.10.10.1: bytes=32 time<1ms TTL=255
+Reply from 10.10.10.1: bytes=32 time=11ms TTL=255
+Reply from 10.10.10.1: bytes=32 time<1ms TTL=255
+Reply from 10.10.10.1: bytes=32 time<1ms TTL=255
+
+Ping statistics for 10.10.10.1:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 11ms, Average = 2ms
+
+---------------------------------------------------------------
+C:\>ping 10.20.20.1
+
+Pinging 10.20.20.1 with 32 bytes of data:
+
+Reply from 10.20.20.1: bytes=32 time=1ms TTL=255
+Reply from 10.20.20.1: bytes=32 time<1ms TTL=255
+Reply from 10.20.20.1: bytes=32 time<1ms TTL=255
+Reply from 10.20.20.1: bytes=32 time<1ms TTL=255
+
+Ping statistics for 10.20.20.1:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 1ms, Average = 0ms
+
+---------------------------------------------------------------
+C:\>ping 10.30.30.1
+
+Pinging 10.30.30.1 with 32 bytes of data:
+
+Reply from 10.30.30.1: bytes=32 time<1ms TTL=255
+Reply from 10.30.30.1: bytes=32 time<1ms TTL=255
+Reply from 10.30.30.1: bytes=32 time<1ms TTL=255
+Reply from 10.30.30.1: bytes=32 time<1ms TTL=255
+
+Ping statistics for 10.30.30.1:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 0ms, Average = 0ms
+
+---------------------------------------------------------------
+C:\>ping 10.40.40.1
+
+Pinging 10.40.40.1 with 32 bytes of data:
+
+Reply from 10.40.40.1: bytes=32 time<1ms TTL=255
+Reply from 10.40.40.1: bytes=32 time=10ms TTL=255
+Reply from 10.40.40.1: bytes=32 time<1ms TTL=255
+Reply from 10.40.40.1: bytes=32 time<1ms TTL=255
+
+Ping statistics for 10.40.40.1:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 10ms, Average = 2ms
+
+---------------------------------------------------------------
+C:\>ping 10.50.50.1
+
+Pinging 10.50.50.1 with 32 bytes of data:
+
+Reply from 10.50.50.1: bytes=32 time=1ms TTL=255
+Reply from 10.50.50.1: bytes=32 time<1ms TTL=255
+Reply from 10.50.50.1: bytes=32 time<1ms TTL=255
+Reply from 10.50.50.1: bytes=32 time=1ms TTL=255
+
+Ping statistics for 10.50.50.1:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 1ms, Average = 0ms
+
+---------------------------------------------------------------
+C:\>ping 10.60.60.1
+
+Pinging 10.60.60.1 with 32 bytes of data:
+
+Reply from 10.60.60.1: bytes=32 time<1ms TTL=255
+Reply from 10.60.60.1: bytes=32 time<1ms TTL=255
+Reply from 10.60.60.1: bytes=32 time<1ms TTL=255
+Reply from 10.60.60.1: bytes=32 time<1ms TTL=255
+
+Ping statistics for 10.60.60.1:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 0ms, Average = 0ms
+
+---------------------------------------------------------------
+C:\>ping 10.70.70.1
+
+Pinging 10.70.70.1 with 32 bytes of data:
+
+Reply from 10.70.70.1: bytes=32 time<1ms TTL=255
+Reply from 10.70.70.1: bytes=32 time<1ms TTL=255
+Reply from 10.70.70.1: bytes=32 time<1ms TTL=255
+Reply from 10.70.70.1: bytes=32 time=1ms TTL=255
+
+Ping statistics for 10.70.70.1:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 1ms, Average = 0ms
+
+---------------------------------------------------------------
+C:\>ping 10.80.80.1
+
+Pinging 10.80.80.1 with 32 bytes of data:
+
+Reply from 10.80.80.1: bytes=32 time<1ms TTL=255
+Reply from 10.80.80.1: bytes=32 time<1ms TTL=255
+Reply from 10.80.80.1: bytes=32 time<1ms TTL=255
+Reply from 10.80.80.1: bytes=32 time=1ms TTL=255
+
+Ping statistics for 10.80.80.1:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 1ms, Average = 0ms
+    
+    ---------------------------------------------------------------
+C:\>ping 10.100.100.1
+
+Pinging 10.100.100.1 with 32 bytes of data:
+
+Reply from 10.100.100.1: bytes=32 time<1ms TTL=255
+Reply from 10.100.100.1: bytes=32 time<1ms TTL=255
+Reply from 10.100.100.1: bytes=32 time<1ms TTL=255
+Reply from 10.100.100.1: bytes=32 time<1ms TTL=255
+
+Ping statistics for 10.100.100.1:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 0ms, Average = 0ms
