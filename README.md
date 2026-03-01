@@ -1,4 +1,4 @@
-# Enterprise Campus Network Architecture  
+# Enterprise Campus Network Architecture  V.1.0
 **OSPF Ring Backbone · ASA Perimeter · DMZ · Azure VPN (Simulated)**
 
 ---
@@ -163,6 +163,22 @@ The logical architecture is scalable, resilient, and aligned with industry best 
 
 ---
 
+## Roadmap
+
+This project represents the first stable architectural version.
+
+Next evolution phase will focus on:
+
+- Granular traffic control through extended ACL design
+- NAT policies and service publication on ASA
+- Layer 2 security hardening (Port-Security, BPDU Guard)
+- Default route redistribution strategy in OSPF
+- Infrastructure services integration (DHCP, NTP, Syslog)
+
+The objective is to progressively evolve this lab toward a more production-like enterprise environment.
+
+---
+
 ## Configuration Files
 
 All device configurations are available in the `/configs` directory.
@@ -174,4 +190,5 @@ Validation outputs are provided in `/validation` to demonstrate routing, segment
 ## License
 
 This project is licensed under the MIT License – see the LICENSE file for details.
+
 
