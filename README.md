@@ -1,4 +1,4 @@
-# Enterprise Campus Network Architecture  V.1.0
+# Enterprise Campus Network Architecture – v1.0
 **OSPF Ring Backbone · ASA Perimeter · DMZ · Azure VPN (Simulated)**
 
 ---
@@ -190,5 +190,6 @@ Validation outputs are provided in `/validation` to demonstrate routing, segment
 ## License
 
 This project is licensed under the MIT License – see the LICENSE file for details.
+
 
 
